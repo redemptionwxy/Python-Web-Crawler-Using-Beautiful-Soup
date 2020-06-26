@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Acceber's Website</title>
+</head>
+<body>
+	<h1>Today is {{date}}</h1>
+
+	<h2>Arthor
+	{% for data in name %}			<!-- jinjia2  -->
+		<li>{{data}}</li>
+	{% endfor %}
+	</h2>
+
+	
+	<table border="1">
+		{% for key,value in game.items() %}		<!-- items 方法把字典转化为列表形式[(key,value),(key,value),()] -->
+			<tr>
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+			</tr>
+		{% endfor %}	
+
+	</table>
+
+
+	<h1>Welcome to my website!</h1>
+</body>
+</html>
